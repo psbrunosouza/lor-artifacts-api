@@ -1,0 +1,31 @@
+{
+    "kind": "collectionType",
+    "collectionName": "artifact_statuses",
+    "info": {
+        "singularName": "artifact-status",
+        "pluralName": "artifact-statuses",
+        "displayName": "ArtifactStatus",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "artifact": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::artifact.artifact",
+            "mappedBy": "artifact_status"
+        },
+        "color": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string"
+        }
+    }
+}

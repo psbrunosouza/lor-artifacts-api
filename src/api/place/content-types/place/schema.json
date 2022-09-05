@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "singularName": "place",
+    "pluralName": "places",
+    "displayName": "ArtifactPlace",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artifact.artifact",
+      "mappedBy": "place"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "kind": "collectionType",
+    "collectionName": "categories",
+    "info": {
+        "singularName": "category",
+        "pluralName": "categories",
+        "displayName": "ArtifactCategory",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string"
+        },
+        "artifacts": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::artifact.artifact",
+            "mappedBy": "category"
+        }
+    }
+}
