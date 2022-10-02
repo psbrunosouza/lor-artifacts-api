@@ -8,13 +8,10 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "string"
-    },
     "power": {
       "type": "integer"
     },
