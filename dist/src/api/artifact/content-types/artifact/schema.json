@@ -38,6 +38,9 @@
             "relation": "manyToOne",
             "target": "api::place.place",
             "inversedBy": "artifacts"
+        },
+        "description": {
+            "type": "text"
         }
     }
 }
