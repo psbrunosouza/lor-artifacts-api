@@ -17,9 +17,9 @@
         },
         "artifact_status": {
             "type": "relation",
-            "relation": "oneToOne",
+            "relation": "manyToOne",
             "target": "api::artifact-status.artifact-status",
-            "inversedBy": "artifact"
+            "inversedBy": "artifacts"
         },
         "title": {
             "type": "string"

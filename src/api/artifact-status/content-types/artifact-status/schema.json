@@ -15,12 +15,6 @@
     "title": {
       "type": "string"
     },
-    "artifact": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::artifact.artifact",
-      "mappedBy": "artifact_status"
-    },
     "color": {
       "type": "string"
     },
@@ -29,6 +23,12 @@
     },
     "image": {
       "type": "string"
+    },
+    "artifacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artifact.artifact",
+      "mappedBy": "artifact_status"
     }
   }
 }
